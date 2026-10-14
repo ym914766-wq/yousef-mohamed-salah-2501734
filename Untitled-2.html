@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>yousef mohamed salsh #s2501734</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --secondary: #1e293b;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-color: #334155;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            padding: 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1e293b, #2563eb);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        /* تنسيق كارت بيانات الطالب */
+        .student-card {
+            background: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+            border-right: 5px solid #10b981;
+        }
+
+        .student-card img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--primary);
+        }
+
+        .student-info h3 {
+            color: var(--secondary);
+            font-size: 1.3rem;
+            margin-bottom: 5px;
+        }
+
+        .student-info p {
+            color: #64748b;
+            font-size: 1rem;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        section {
+            background: var(--card-bg);
+            padding: 30px;
+            margin-bottom: 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            border-right: 5px solid var(--primary);
+        }
+
+        h2 {
+            color: var(--secondary);
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+
+        p, ul {
+            margin-bottom: 15px;
+            font-size: 1.05rem;
+        }
+
+        ul {
+            padding-right: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .highlight {
+            background-color: #e0f2fe;
+            padding: 2px 6px;
+            border-radius: 4px;
+            color: #0369a1;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #64748b;
+            font-size: 0.9rem;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <!-- رأس الصفحة -->
+        <header>
+            <h1>استضافة المواقع والدومينات (Web Hosting & Domains)</h1>
+            <p>كيف تعمل شبكة الإنترنت وكيف تحصل المواقع على عناوين فريدة؟</p>
+        </header>
+
+        <!-- بيانات الطالب (تعديل الاسم والصورة والكود هنا) -->
+        <div class="student-card">
+            <!-- حط رابط صورتك أو اسم ملف الصورة هنا بدل profile.jpg -->
+            <img src="eljoo poto.jpeg" alt="صورة الطالب">
+            <div class="student-info">
+                <h3>إعداد الطالب: يوسف محمد صلاح محمد</h3>
+                <p><strong></strong> كود الكارنيه :</strong>2501734</p>
+                <p><strong>الفرقة الدراسية:</strong>معهد الدلتا العالي للحاسبات</p>
+            </div>
+        </div>
+
+        <section>
+            <h2>1. مقدمة عن الإنترنت وإزاي المواقع بتشتغل؟</h2>
+            <p>الإنترنت باختصار هو شبكة ضخمة من أجهزة الكمبيوتر المرتبطة ببعضها حول العالم. عشان أي موقع يقدر يظهر لأي شخص، بيعتمد على نظام أساسي بنسميه <span class="highlight">العميل والخادم (Client-Server Architecture)</span>:</p>
+            <ul>
+                <li><strong>العميل (Client):</strong> هو جهازك أو هاتفك أو المتصفح اللي بتستخدمه (زي جوجل كروم) وأنت بتطلب صفحة معينة.</li>
+                <li><strong>الخادم (Server):</strong> هو جهاز كمبيوتر قوي جداً وموصول بالإنترنت 24 ساعة، ومتخزن عليه ملفات الموقع (صور، أكواد برمجية، وقواعد بيانات).</li>
+            </ul>
+            <p>لما بتكتب اسم موقع في المتصفح، جهازك بيبعت طلب (Request) للسيرفر ده، والسيرفر بيرد عليك بملفات الموقع عشان تظهر قدامك.</p>
+        </section>
+
+        <section>
+            <h2>2. إيه هو عنوان الموقع على الإنترنت؟ (IP Address & DNS)</h2>
+            <p>كل جهاز متصل بالإنترنت، بما فيها خوادم المواقع، بيكون له عنوان رقمي فريد ومميز بيتكون من أرقام، وبنسميه <span class="highlight">عنوان آي بي (IP Address)</span> زي مثلاً: <code>192.168.1.1</code>.</p>
+            <p>بما إن حفظ الأرقام الصعبة دي مستحيل للبشر، تم ابتكار نظام أسماء النطاقات <span class="highlight">DNS (Domain Name System)</span>. الـ DNS ده بيشتغل زي "دليل التليفون"، بياخد الاسم السهل اللي أنت بتكتبه (زي google.com) وبيترجمه لوحده لعنوان الـ IP الحقيقي اللي السيرفر موجود عليه في خفاء تام وسرعة رهيبة.</p>
+        </section>
+
+        <section>
+            <h2>3. يعني إيه "الدومين" (Domain Name)؟</h2>
+            <p>الدومين هو اسم الموقع والعنوان اللي الناس بتكتبه في المتصفح عشان يوصلولك، وبيتكون من جزأين أساسيين:</p>
+            <ul>
+                <li><strong>اسم الموقع (Domain Name):</strong> زي <code>yousef</code> أو اسم شركتك.</li>
+                <li><strong>امتداد النطاق (TLD):</strong> اللاحقة اللي بتيجي في الآخر زي <code>.com</code> أو <code>.net</code> أو <code>.org</code> أو الامتدادات الخاصة بالدول زي <code>.eg</code> لمصر.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>4. إيه هي "استضافة المواقع" (Web Hosting)؟</h2>
+            <p>لو اعتبرنا إن الـ "الدومين" هو عنوان بيتك الجديد، فـ "الاستضافة" هي **مساحة الأرض أو الشقة** اللي هتبني فيها بيتك وتحط فيها أثاثك.</p>
+            <p>الاستضافة هي باختصار استئجار مساحة تخزينية على سيرفر حقيقي متصل بالإنترنت بسرعة فائقة، عشان تخزن عليها ملفات موقعك وتفضل شغالة ومتاحة للزوار في أي وقت ومن أي مكان في العالم.</p>
+            <p><strong>أنواع الاستضافة الشهيرة:</strong></p>
+            <ul>
+                <li><strong>استضافة مشتركة (Shared Hosting):</strong> عدة مواقع تتشارك في نفس السيرفر (ممتازة للمبتدئين ورخيصة).</li>
+                <li><strong>السيرفر الخاص (VPS):</strong> سيرفر مقسم افتراضياً بحيث تاخد مساحة وموارد مخصصة ليك وحدك.</li>
+                <li><strong>السيرفر الكامل (Dedicated Server):</strong> سيرفر كامل ومستقل تماماً تحت تصرفك (للمواقع الضخمة جداً).</li>
+            </ul>
+        </section>
+
+        <footer>
+            <p>تم إعداد هذا البحث بواسطة لغة HTML و CSS لعرضه كموقع إلكتروني تفاعلي.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
